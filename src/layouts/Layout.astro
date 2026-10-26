@@ -1,0 +1,22 @@
+---
+import  Footer  from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-(--bg) ">
+    <Header />
+
+    <main class="min-h-screen pt-24 px-4 max-w-7xl mx-auto">
+        <slot />
+    </main>
+
+    <Footer />
+</body>
+</html>tm
