@@ -1,12 +1,11 @@
 ---
 import '../styles/global.css';
-
 ---
 <nav class="bg-neutral-primary fixed w-full z-20 top-0 inset-s-0 border-b border-default bg-(--primary-color)">
   <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <span class="self-center text-xl text-amber-300 font-semibold whitespace-nowrap">JK</span>
+        <span class="self-center text-xl text-amber-300 font-mono whitespace-nowrap">JK</span>
     </a>
 
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex 
@@ -23,32 +22,53 @@ import '../styles/global.css';
         rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
 
         <li>
-          <a href="#" class="block py-2 px-3 text-white bg-brand hover:text-amber-200
-          rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Projetos</a>
-        </li>
-
-        <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+          <a href="#" class="block py-2 px-3 text-white bg-brand hover:text-amber-200 
+          rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Projects</a>
         </li>
 
         <li>
           <a href="#" class="block py-2 px-3 text-amber-200 hover:text-white
           rounded hover:bg-neutral-tertiary md:hover:bg-transparent 
-          md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Sobre Mim</a>
+          md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About me</a>
         </li>
 
         <li>
           <a href="#" class="block py-2 px-3 text-amber-200 hover:text-white
           rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0
-          md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Conhecimetos</a>
+          md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Education</a>
+        </li>
+
+        <li>
+          <a href="#" class="block py-2 px-3 text-amber-200 hover:text-white
+          rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0
+          md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Experience</a>
         </li>
 
         <li>
           <a href="#" class="block py-2 px-3 text-amber-200 hover:text-white 
           rounded hover:bg-neutral-tertiary md:hover:bg-transparent 
-          md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contato</a>
+          md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<script>
+  function setupNavbar() {
+    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+    const navMenu = document.getElementById('navbar-default');
+
+    // Remove event listener antigo para evitar duplicação (boa prática no Astro)
+    if (toggleButton && navMenu) {
+      toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+    }
+  }
+
+  // Executa quando a página carrega normalmente
+  document.addEventListener('DOMContentLoaded', setupNavbar);
+
+  // Executa caso você utilize View Transitions no Astro
+  document.addEventListener('astro:page-load', setupNavbar);
+</script>
