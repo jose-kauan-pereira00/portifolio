@@ -4,3 +4,12 @@
     --bg: #191918;
     --primary-color: #000;
 }
+body {
+  
+  background-image: radial-gradient(rgba(156, 163, 175, 0.2) 1.5px, transparent 1.5px);
+  background-size: 32px 32px; /* Controla o espaçamento entre os pontos */
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,12 +1,13 @@
 <div class="w-full h-full bg-neutral-primary-soft">
 
-    <div
-        class="h-full w-full mx-auto relative top-12 
+    <div id="hero"
+        class="h-full w-full min-h-screen mx-auto relative top-12 
         xl:px-16 px-8 flex md:flex-row flex-col gap-4 justify-center 
         items-center pb-10 pt-4">
         
         <div class="w-screen relative">
-            <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline-[.15rem] 
+            <img class="relative z-10 rounded-full 
+            lg:max-w-[70%] max-w-[60%] mx-auto outline-[.15rem] 
             outline-offset-[.1rem] outline-amber-300" src="./my.JPG" alt="My Image" />
         </div>
 
@@ -14,11 +15,14 @@
             <h1 class="md:text-4xl sm:text-3xl text-2xl font-semibold font-serif">Olá , My name is <i class="text-amber-200">José Kauan</i></h1>
 
             <h3 class="capitalize text-white">i'm <span class="typing text-amber-500 ">fullstack developer</span></h3>
-            <p class="text-amber-300">Fullstack developer in development, 
+            <p class="text-amber-300 text-justify">Fullstack developer in development, 
                 with knowledge in Node.js, React, Spring Boot, Astro, 
                 WordPress and Docker among other things.</p>
+                
             <div class="sm:mt-4 mt-2">
-                <button class="px-6 py-1 bg-gray-700 text-white rounded-sm">Get In Touch</button>
+                <button class="px-6 py-1 hover:bg-amber-500 hover:text-black
+                transition-transform duration-300 hover:scale-105 hover:-translate-y-1
+                bg-gray-700 text-white rounded-sm">Get In Touch</button>
             </div>
         </div>
     </div>
@@ -27,7 +31,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script>
     var typed = new Typed('.typing', {
-    strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
+    strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Design,', 'Backend Developer,', 'Mobile Apps Developer.'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
