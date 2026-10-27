@@ -5,15 +5,15 @@ text-white min-h-screen flex flex-col justify-center py-20
 px-6 overflow-hidden scroll-mt-24">
   
   <div class="max-w-6xl mx-auto  mb-10 text-center md:text-left">
-    <h2 class="text-4xl font-bold border-b-4 border-amber-400 
-    hidden pb-1 md:block ">Projects</h2>
+    <h2 class="text-4xl font-bold border-b-4 border-amber-300 text-amber-500 
+    pb-1">Projects</h2>
   </div>
 
   <div class="max-w-6xl mx-auto w-full flex flex-col gap-14 ">
     
     <div class="w-full">
-      <h3 class="text-2xl font-semibold text-amber-400 mb-6 border-l-4 border-amber-400 pl-3">
-        Front-end Projects
+      <h3 class="text-2xl font-semibold text-amber-600 mb-6 border-l-4 border-amber-600 pl-3">
+        Front-end
       </h3>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -40,10 +40,13 @@ px-6 overflow-hidden scroll-mt-24">
           </div>
         </div>
 
-        <div class="group outline-[.15rem] outline-amber-600 relative h-[460px] rounded-xl overflow-hidden shadow-xl bg-cover bg-center transition-transform duration-300 hover:scale-[1.02]" 
-             style="background-image: url('/images/castanha.png');">
+        <div class="group outline-[.15rem] outline-amber-600 relative h-[460px]  
+        bg-linear-to-b from-transparent to-black rounded-xl overflow-hidden shadow-xl 
+        bg-cover bg-center transition-transform duration-300 hover:scale-[1.02]" 
+        style="background-image: url('/images/castanha.png');">
           
-          <div class="absolute inset-0 bg-black/70 group-hover:bg-black/85 transition-all duration-300 flex flex-col justify-end p-6">
+          <div class="absolute inset-0 bg-linear-to-b from-transparent to-black
+           bg-black/30 group-hover:bg-black/85 transition-all duration-300 flex flex-col justify-end p-6">
             <span class="text-xs tracking-wider text-amber-600 font-semibold mb-1">Astro / Tailwind</span>
 
             <h4 class="text-xl text-left font-bold text-white group-hover:text-amber-400 transition-colors duration-300 mb-2">
@@ -66,18 +69,18 @@ px-6 overflow-hidden scroll-mt-24">
 
 
     <div class="w-full">
-      <h3 class="text-2xl font-semibold text-amber-400 mb-6 border-l-4 border-amber-400 pl-3">
-        Back-end Projects
+      <h3 class="text-2xl font-semibold text-white mb-6 border-l-4 border-white pl-3">
+        Back-end
       </h3>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
         <div class="group relative h-[460px] 
         rounded-xl overflow-hidden shadow-xl bg-cover bg-center transition-transform duration-300 
-        hover:scale-[1.02] outline-[.15rem] outline-amber-600" 
-             style="background-image: url('/images/apicash.png');">
+        hover:scale-[1.02] outline-[.15rem] outline-white" 
+             style="background-image: url('/images/backend.svg');">
           
-          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/85 transition-all duration-300 flex flex-col justify-end p-6">
+          <div class="absolute bg-linear-to-b from-transparent to-black inset-0 bg-black/30 group-hover:bg-black/85 transition-all duration-300 flex flex-col justify-end p-6">
             <span class="text-xs tracking-wider text-amber-400 font-semibold mb-1">Spring / MariaDB/ Docker/ API/ OAuth2</span>
             
             <h4 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300 mb-2">
@@ -89,6 +92,61 @@ px-6 overflow-hidden scroll-mt-24">
             <a href="https://github.com/jose-kauan-pereira00/full-stack-management-system/tree/main/backend" 
             target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors">
               View Code &rarr;
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="group relative h-[460px] 
+        rounded-xl overflow-hidden shadow-xl bg-cover bg-center transition-transform duration-300 
+        hover:scale-[1.02] outline-[.15rem] outline-white" 
+             style="background-image: url('/images/celular.svg');">
+          
+          <div class="absolute bg-linear-to-b from-transparent to-black inset-0 bg-black/30 group-hover:bg-black/85 transition-all duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs tracking-wider text-amber-400 font-semibold mb-1">Spring /Microsservices/ Spring Cloud </span>
+            
+            <h4 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300 mb-2">
+              Secure REST API
+            </h4>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+              Backend service developed in Java with Spring Boot for comprehensive financial management.
+            </p>
+            <a href="https://github.com/jose-kauan-pereira00/ToDoAndNotifications" 
+            target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors">
+              View Code &rarr;
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="w-full">
+      <h3 class="text-2xl font-semibold text-yellow-500 mb-6 border-l-4 border-yellow-500 pl-3">
+        Design
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="group relative h-[460px] 
+        rounded-xl overflow-hidden shadow-xl bg-cover bg-center transition-transform duration-300 
+        hover:scale-[1.02] outline-[.15rem] outline-yellow-500" 
+             style="background-image: url('/images/design.png');">
+          
+          <div class="absolute inset-0 bg-black/10 bg-linear-to-b from-transparent to-black group-hover:bg-black/85 transition-all duration-300 flex flex-col justify-end p-6">
+            <span class="text-xs tracking-wider text-amber-400 font-semibold mb-1">Canvas</span>
+            
+            <h4 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300 mb-2">
+              Desing DevLear
+            </h4>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+              Simple webpage idea for a blog
+            </p>
+            <a href="https://canva.link/qhqg87z40gwcd6s" 
+            target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors">
+              View Desing &rarr;
             </a>
             
           </div>
