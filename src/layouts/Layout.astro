@@ -24,7 +24,7 @@ const imageURL = new URL(image, Astro.site || 'https://josekauan.vercel.app');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
-    <link rel="icon" type="image/svg+xml" href="/logo-jk.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicons.svg" />
 
     <title>{title}</title>
     <meta name="title" content={title} />
@@ -47,7 +47,7 @@ const imageURL = new URL(image, Astro.site || 'https://josekauan.vercel.app');
 <body class="bg-(--bg) font-mono">
 
     <Header />
-    <main class="grow p-4">
+    <main class="p-4">
         <slot />
     </main>
     <Footer />

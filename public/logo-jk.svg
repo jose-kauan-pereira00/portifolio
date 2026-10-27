@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <!-- Fundo escuro arredondado combinando com o tema do site -->
-  <rect width="100" height="100" rx="24" fill="#09090b" />
-  
-  <!-- Texto "JK" em destaque com a cor ambar do seu portfólio -->
-  <text x="50%" y="53%" dominant-baseline="middle" text-anchor="middle" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="46" letter-spacing="-2">
-    JK
-  </text>
-</svg>
