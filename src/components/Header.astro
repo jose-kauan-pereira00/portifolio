@@ -52,7 +52,6 @@ import '../styles/global.css';
     const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
     const navMenu = document.getElementById('navbar-default');
 
-    // Remove event listener antigo para evitar duplicação (boa prática no Astro)
     if (toggleButton && navMenu) {
       toggleButton.addEventListener('click', () => {
         navMenu.classList.toggle('hidden');
@@ -60,9 +59,7 @@ import '../styles/global.css';
     }
   }
 
-  // Executa quando a página carrega normalmente
   document.addEventListener('DOMContentLoaded', setupNavbar);
 
-  // Executa caso você utilize View Transitions no Astro
   document.addEventListener('astro:page-load', setupNavbar);
 </script>
