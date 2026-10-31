@@ -11,8 +11,8 @@ interface Props {
 
 const {
   title = "José Kauan | Portifolio",
-  description = "Portfólio de José Kauan, Desenvolvedor Fullstack especializado em Java, Spring Boot, Astro e Tailwind CSS.",
-  image = "/my.JPG"
+  description = "Portfolio of José Kauan, Fullstack Developer specializing in Java, Spring Boot, Astro, and Tailwind CSS.",
+  image = "/my.jpg"
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://josekauan.vercel.app');
@@ -21,9 +21,9 @@ const imageURL = new URL(image, Astro.site || 'https://josekauan.vercel.app');
 
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicons.svg" />
 
     <title>{title}</title>
@@ -36,6 +36,10 @@ const imageURL = new URL(image, Astro.site || 'https://josekauan.vercel.app');
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={imageURL} />
+    <meta property="og:image:secure_url" content={imageURL} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
